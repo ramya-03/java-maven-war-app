@@ -32,18 +32,18 @@
  <repositories>
     <repository>
       <id>java-maven-app-group</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-group/</url>
+      <url>http://172.31.41.129:8081/repository/java-maven-app-group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
-      <id>java-maven-app-snapshot</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-snapshot/</url>
+      <id>java-maven-app-snapshots</id>
+      <url>http://172.31.41.129:8081/repository/java-maven-app-snapshot/</url>
     </snapshotRepository>
     <repository>
-      <id>java-maven-app-release</id>
-      <url>http://172.31.29.97:8081/repository/java-maven-app-release/</url>
+      <id>java-maven-app-releases</id>
+      <url>http://172.31.41.129:8081/repository/java-maven-app-release/</url>
     </repository>
   </distributionManagement>
 </project>
