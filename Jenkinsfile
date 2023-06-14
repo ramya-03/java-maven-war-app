@@ -21,17 +21,17 @@ pipeline{
             }
         }
 
-        stage('Sonar Scan'){
-            steps{
-                withSonarQubeEnv("SonarQube_Assessment") {
-                    sh "${tool("Sonar_4.8")}/bin/sonar-scanner \
-                    -Dsonar.host.url=http://ec2-3-26-0-55.ap-southeast-2.compute.amazonaws.com:9000/ \
-                    -Dsonar.login=sqp_207edbc003d313f9fa4572f1dd0ea33fa0d23846 \
-                    -Dsonar.java.binaries=target \
-                    -Dsonar.projectKey=java-maven-app-war"
-                }
-            }
-        }
+        // stage('Sonar Scan'){
+        //     steps{
+        //         withSonarQubeEnv("SonarQube_Assessment") {
+        //             sh "${tool("Sonar_4.8")}/bin/sonar-scanner \
+        //             -Dsonar.host.url=http://ec2-3-26-0-55.ap-southeast-2.compute.amazonaws.com:9000/ \
+        //             -Dsonar.login=sqp_207edbc003d313f9fa4572f1dd0ea33fa0d23846 \
+        //             -Dsonar.java.binaries=target \
+        //             -Dsonar.projectKey=java-maven-app-war"
+        //         }
+        //     }
+        // }
 
         stage('Nexus Upload'){
             steps{
