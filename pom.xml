@@ -32,7 +32,7 @@
  <repositories>
     <repository>
       <id>java-maven-app-group</id>
-      <url>http://172.31.26.1899:8081/repository/java-maven-app-group/</url>
+      <url>http://172.31.26.189:8081/repository/java-maven-app-group/</url>
     </repository>
   </repositories>
 
